@@ -39,7 +39,7 @@
   animation: fadeIn 0.8s ease-out;
   
   @include mobile {
-    min-height: 250vh;
+    min-height: 230vh;
   }
 }
 
@@ -86,7 +86,7 @@
     animation-delay: 0.2s;
 
     .contact-image {
-      max-width: 80%;
+      width: 500px;
       height: auto;
       max-height: 400px;
       animation: float 4s ease-in-out infinite;

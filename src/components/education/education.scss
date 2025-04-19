@@ -9,7 +9,7 @@
   min-height: 100vh; // take at least full screen
   height: auto; // let content decide
   @include mobile {
-    min-height: 250vh;
+    min-height: 150vh;
   }
   h1 {
     font-size: 42px;
