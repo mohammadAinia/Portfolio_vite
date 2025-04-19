@@ -28,7 +28,7 @@ export default function Intro() {
             <div className="left">
                 <div className="imgContainer">
                     <img 
-                        src='assets/man.png' 
+                        src='assets/hero.png' 
                         alt='Portrait of Mohammad Ainia' 
                         loading="lazy"
                     />
