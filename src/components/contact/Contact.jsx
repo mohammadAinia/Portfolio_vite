@@ -16,7 +16,7 @@ export default function Contact() {
         <h1>Contact</h1>
         <div className="contact-content">
           <div className="left">
-            <img src="assets/shake.svg" alt="Handshake Illustration" className="contact-image" />
+            <img src="assets/shake.png" alt="Handshake Illustration" className="contact-image" />
           </div>
           <div className="right">
             <div className="contact-card">

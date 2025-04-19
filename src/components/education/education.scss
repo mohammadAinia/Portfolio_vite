@@ -6,8 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2211px;
-
+  min-height: 100vh; // take at least full screen
+  height: auto; // let content decide
+  @include mobile {
+    min-height: 250vh;
+  }
   h1 {
     font-size: 42px;
     color: #2c3e50;
