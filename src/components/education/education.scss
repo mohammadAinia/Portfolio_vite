@@ -1,0 +1,175 @@
+@import "../../global.scss";
+
+.education {
+  background-color: white;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 2211px;
+
+  h1 {
+    font-size: 42px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+
+
+    @include mobile {
+      font-size: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .education-section {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    margin-bottom: 60px;
+
+    @include mobile {
+      padding: 24px;
+      width: 80%;
+      margin-right: 40px;
+      height: 250px; // 📏 Height specific to education-section
+    }
+
+    h2 {
+      color: #2980b9;
+      font-size: 28px;
+      margin-bottom: 25px;
+
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    .education-card {
+      h3 {
+        font-size: 20px;
+        color: #34495e;
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: #555;
+        margin: 5px 0;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      .grad-btn {
+        margin-top: 15px;
+        display: inline-block;
+        background-color: #27ae60;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #1f8a4c;
+        }
+
+        @include mobile {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .certification-section {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    margin-bottom: 60px;
+
+    @include mobile {
+      padding: 24px;
+      width: 80%;
+      margin-right: 40px;
+      height: 400px; // 📏 Height specific to certification-section
+    }
+
+    h2 {
+      color: #2980b9;
+      font-size: 28px;
+      margin-bottom: 25px;
+
+      @include mobile {
+        font-size: 22px;
+      }
+    }
+
+    .cert-list {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 14px;
+        padding-left: 24px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &::before {
+          content: '✔';
+          position: absolute;
+          left: 0;
+          color: #27ae60;
+          font-size: 18px;
+        }
+
+        span {
+          margin-right: 16px;
+          flex: 1;
+        }
+
+        .download-btn {
+          background-color: #2980b9;
+          color: white;
+          padding: 6px 12px;
+          border-radius: 8px;
+          font-size: 14px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #1c6690;
+          }
+
+          @include mobile {
+            margin-top: 8px;
+            font-size: 13px;
+          }
+        }
+
+        @include mobile {
+          font-size: 15px;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
